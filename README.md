@@ -162,12 +162,12 @@ stateDiagram-v2
     direction LR
     [*] --> Charging: sunrise
     Charging --> Exporting: battery ≥ 90% and grid up
-    Exporting --> Islanded: grid cut 14:00
+    Exporting --> Islanded: grid cut at 2 pm
     Charging --> Islanded: grid cut
-    Islanded --> Charging: grid back 18:00
+    Islanded --> Charging: grid back at 6 pm
     Charging --> Discharging: after sunset
-    Discharging --> Islanded: grid cut 21:00
-    Islanded --> Discharging: grid back 23:00
+    Discharging --> Islanded: grid cut at 9 pm
+    Islanded --> Discharging: grid back at 11 pm
     Discharging --> Reserve: battery at 20%
     Reserve --> Charging: sunrise
 ```
