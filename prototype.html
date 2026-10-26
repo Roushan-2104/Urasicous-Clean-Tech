@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prototype & report · Urasicous Clean Tech</title>
+<meta name="description" content="A 40 kWp community solar microgrid, raised over growing crops, with 90 kWh of LiFePO4 storage for 50 households in Rampur Kheda, built by Team Pioneering Sol-Gen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-nav" id="top">
+  <div class="wrap nav-in">
+    <a class="mark" href="index.html" aria-label="Urasicous Clean Tech, home"><svg viewBox="0 0 26 26" aria-hidden="true"><path fill="#f6c624" d="M6 0h14l6 6v14l-6 6H6l-6-6V6z"/><path fill="#0b2219" d="M12 3h2v20h-2zM3 12h20v2H3z"/></svg>Urasicous Clean Tech</a>
+    <button type="button" class="nav-btn" aria-expanded="false" aria-controls="navMenu"><span class="bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav-menu" id="navMenu" aria-label="Main">
+      <ol class="nav-links">
+        <li><a href="index.html"><span class="n">1</span>Home</a></li>
+        <li><a href="village.html"><span class="n">2</span>The village</a></li>
+        <li><a href="system.html"><span class="n">3</span>How it works</a></li>
+        <li><a href="innovation.html"><span class="n">4</span>Innovation</a></li>
+        <li><a href="dashboard.html" class="live"><span class="n">5</span>Live dashboard</a></li>
+        <li><a href="finances.html"><span class="n">6</span>Finances</a></li>
+        <li><a href="governance.html"><span class="n">7</span>Governance</a></li>
+        <li><a href="prototype.html" aria-current="page"><span class="n">8</span>Prototype</a></li>
+      </ol>
+    </nav>
+  </div>
+</header>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="step">Step 8 of 8</p>
+    <h1>Prototype & report</h1>
+    <p class="lead">Before building the real thing, we built one small enough to sit on a desk. Have a look at our layout sketch, the working cardboard model, what it cost us, and the full project report.</p>
+  </div>
+</header>
+
+<main>
+<section class="section tight wrap" aria-label="Prototype items">
+  <div class="proto" style="margin-top:0">
+    <div>
+      <ul class="idx" role="tablist" aria-label="Prototype items">
+        <li><button role="tab" id="t-sketch" aria-selected="true" aria-controls="p-sketch" data-tone="mist" data-fact="Our hand-drawn layout of the whole village grid: the solar field, the central power house with the controller, inverters and battery, and the main cable running on poles and underground to every lane.">Sketch plan</button></li>
+        <li><button role="tab" id="t-model" aria-selected="false" aria-controls="p-model" data-tone="forest" data-fact="A cardboard village wired up to a small working solar panel and battery. The LEDs in each house run off the panel by day and switch to the battery the moment we flip the 'grid' switch off.">Cardboard prototype</button></li>
+        <li><button role="tab" id="t-bill" aria-selected="false" aria-controls="p-bill" data-tone="solar" data-fact="Everything in the desk model, bought from local shops or reused from home. The whole working model cost us less than ₹500.">Material cost bill</button></li>
+        <li><button role="tab" id="t-report" aria-selected="false" aria-controls="p-report" data-tone="forest" data-fact="Our complete worksheet for HCL Jigsaw: village research, load calculations, system sizing, costs, how the village will run it, and our pitch.">Project report</button></li>
+      </ul>
+      <p class="idx-fact" id="idxFact" aria-live="polite"></p>
+      <div class="downloads">
+        <a class="btn" href="assets/Village-Microgrid-Project-Report.pptx" download>Download project report <span aria-hidden="true">(.pptx, 5.7 MB)</span></a>
+        <a class="btn light" style="background:var(--mist)" href="assets/sketch-plan.jpg" download>Sketch plan (.jpg)</a>
+      </div>
+    </div>
+
+    <div class="stagebox" id="stagebox" data-tone="mist">
+      <div class="disc cell-shape"></div>
+      <div class="pane on" id="p-sketch" role="tabpanel" aria-labelledby="t-sketch">
+        <img src="assets/sketch-plan.jpg" alt="Hand-drawn sketch plan of the microgrid: solar array zone, central power house with controller, inverters and battery container, and cable lines to households" width="1204" height="898" loading="lazy">
+      </div>
+      <div class="pane" id="p-model" role="tabpanel" aria-labelledby="t-model">
+        <svg viewBox="0 0 560 430" role="img" aria-label="Drawing of the cardboard prototype: a board with a tilted solar panel, a battery box and five small houses with lit windows">
+          <rect x="30" y="300" width="500" height="70" fill="#c9a26b"/>
+          <rect x="30" y="292" width="500" height="10" fill="#b38b55"/>
+          <g transform="translate(60 150)"><rect x="0" y="100" width="12" height="44" fill="#8a6a3f"/><rect x="96" y="80" width="12" height="64" fill="#8a6a3f"/><polygon points="-10,104 120,76 120,30 -10,58" fill="#1d4a8a"/><g stroke="#cfe0f5" stroke-width="2"><line x1="33" y1="49" x2="33" y2="95"/><line x1="77" y1="39" x2="77" y2="86"/><line x1="-10" y1="81" x2="120" y2="53"/></g></g>
+          <rect x="215" y="236" width="70" height="56" fill="#3d7a58"/><rect x="232" y="226" width="14" height="10" fill="#3d7a58"/><text x="250" y="270" text-anchor="middle" fill="#fbfcfa" font-family="Jost, sans-serif" font-size="15" font-weight="600">BATT</text>
+          <g fill="#d8b47c">
+            <rect x="310" y="232" width="44" height="60"/><polygon points="305,234 332,206 359,234"/>
+            <rect x="372" y="244" width="40" height="48"/><polygon points="367,246 392,222 417,246"/>
+            <rect x="430" y="228" width="48" height="64"/><polygon points="425,230 454,200 483,230"/>
+          </g>
+          <g fill="#f6c624"><rect x="322" y="250" width="12" height="12"/><rect x="384" y="258" width="12" height="12"/><rect x="444" y="246" width="12" height="12"/><rect x="460" y="246" width="12" height="12"/></g>
+          <path d="M168 250 C190 250 200 262 215 262 M285 262 C300 262 300 262 310 262 M354 270 L372 270 M412 270 L430 270" stroke="#0f2e22" stroke-width="3" fill="none"/>
+          <text x="30" y="400" fill="#0f2e22" font-family="Jost, sans-serif" font-size="16">Desk-scale model: panel, battery, five homes on one feeder</text>
+        </svg>
+      </div>
+      <div class="pane" id="p-bill" role="tabpanel" aria-labelledby="t-bill">
+        <div class="receipt">
+          <h4>Prototype material bill</h4>
+          <p>Team Pioneering Sol-Gen · desk model</p>
+          <table>
+            <tbody>
+              <tr><td>Cardboard sheets (3, reused)</td><td>₹0</td></tr>
+              <tr><td>Mini solar panel, 6 V 1 W (1)</td><td>₹100</td></tr>
+              <tr><td>3.7 V Li-ion cell with holder</td><td>₹150</td></tr>
+              <tr><td>5 mm LEDs (20) and resistors</td><td>₹60</td></tr>
+              <tr><td>Mini DC motor fan</td><td>₹80</td></tr>
+              <tr><td>Toggle switches (2)</td><td>₹30</td></tr>
+              <tr><td>Hook-up wire and tape</td><td>₹40</td></tr>
+              <tr><td>Glue (from home)</td><td>₹0</td></tr>
+              <tr><td>Markers</td><td>₹30</td></tr>
+              <tr class="t"><td>Total</td><td>₹490</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="pane" id="p-report" role="tabpanel" aria-labelledby="t-report">
+        <div class="report-card">
+          <h4>Village Microgrid: Team Worksheet</h4>
+          <p style="color:var(--slate-500);font-size:15px">HCL Jigsaw · Edition 7 · Climate Action &amp; Sustainable Energy · 10 slides</p>
+          <ol>
+            <li>Village profile: Rampur Kheda</li>
+            <li>Household energy needs</li>
+            <li>Solar array sizing</li>
+            <li>Battery storage design</li>
+            <li>Distribution layout sketch</li>
+            <li>Cost breakdown and subsidy</li>
+            <li>Village Electricity Committee</li>
+            <li>Executive summary and pitch</li>
+          </ol>
+          <a class="btn" href="assets/Village-Microgrid-Project-Report.pptx" download>Download .pptx</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<nav class="tour" aria-label="Judge's tour">
+  <div class="wrap tour-in">
+    <a class="tour-prev" href="governance.html"><small>← Previous · Step 7</small><b>Run by the village</b></a>
+    <div class="tour-mid"><span>Step 8 of 8</span><ol class="dots"><li><a href="index.html" aria-label="Step 1: Home"></a></li><li><a href="village.html" aria-label="Step 2: The village & the need"></a></li><li><a href="system.html" aria-label="Step 3: How it works"></a></li><li><a href="innovation.html" aria-label="Step 4: Innovation"></a></li><li><a href="dashboard.html" aria-label="Step 5: Live dashboard"></a></li><li><a href="finances.html" aria-label="Step 6: Finances"></a></li><li><a href="governance.html" aria-label="Step 7: Run by the village"></a></li><li><a href="prototype.html" aria-label="Step 8: Prototype & report" aria-current="page"></a></li></ol></div>
+    <a class="tour-next" href="index.html"><small>End of the tour →</small><b>Back to home</b></a>
+  </div>
+</nav>
+
+<footer class="foot">
+  <div class="wrap">
+    <h2 class="foot-line">Power that belongs to Rampur Kheda.</h2>
+    <div class="blocks" aria-hidden="true">
+      <span style="--b:var(--solar);height:100%">U</span>
+      <span style="--b:var(--forest-300);height:78%">R</span>
+      <span style="--b:var(--forest-500);--bt:var(--white);height:90%">A</span>
+      <span style="--b:var(--white);height:68%">S</span>
+      <span style="--b:var(--solar);height:84%">I</span>
+      <span style="--b:var(--forest-300);height:96%">C</span>
+      <span style="--b:var(--forest-500);--bt:var(--white);height:72%">O</span>
+      <span style="--b:var(--white);height:88%">U</span>
+      <span style="--b:var(--solar);height:64%">S</span>
+    </div>
+
+    <div class="foot-cols">
+      <div><h4>The project</h4><a href="index.html">Home</a><a href="village.html">The village</a><a href="system.html">How it works</a><a href="innovation.html">Innovation</a></div>
+      <div><h4>See it working</h4><a href="dashboard.html">Live dashboard</a><a href="finances.html">Finances</a><a href="governance.html">Governance</a><a href="prototype.html">Prototype</a></div>
+      <div><h4>Downloads</h4><a href="assets/Village-Microgrid-Project-Report.pptx" download>Project report (.pptx)</a><a href="assets/sketch-plan.jpg" download>Sketch plan (.jpg)</a></div>
+      <div><h4>Get in touch</h4><span>Rampur Kheda, 38 km from Nashik, Maharashtra</span><span>Team Pioneering Sol-Gen</span><span>Support: <a class="mail" href="mailto:67811urasicousct@gmail.com">67811urasicousct@gmail.com</a></span></div>
+    </div>
+
+    <p class="credits">Pictures: <a href="https://commons.wikimedia.org/w/index.php?curid=152914959">“Traditional House Solar Zamtang Zanskar”</a> by Timothy A. Gonsalves, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=42551914">“Anjenari village, Nashik”</a> by Mahi29, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=44112543">“Rooftop solar power plant”</a> by Oleg Savitsky, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Logarex_smart_household_electricity_meter_build_year_2023.jpg">“Logarex smart household electricity meter”</a> by RobbieIanMorrison, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Solar_panels_closeup.jpg">“Solar panels closeup”</a> by Jollyroger, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>. All via Wikimedia Commons.</p>
+
+    <div class="copy">
+      <span>© 2026 Urasicous Clean Tech | Developed with passion by Team Pioneering Sol-Gen for HCL Jigsaw.</span>
+      <a class="btn" href="#top" style="min-height:44px">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Urasicous Clean Tech</title>
-<meta name="description" content="A 40 kWp community solar microgrid with 90 kWh of LiFePO4 storage for 50 households in Rampur Kheda, engineered by Team Pioneering Sol-Gen.">
+<meta name="description" content="A 40 kWp community solar microgrid, raised over growing crops, with 90 kWh of LiFePO4 storage for 50 households in Rampur Kheda, built by Team Pioneering Sol-Gen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,33 +12,38 @@
 </head>
 <body>
 
-<!-- ================= HERO ================= -->
-<header class="hero" id="top">
-  <div class="wrap">
-    <nav class="topbar" aria-label="Main">
-      <span class="left">Rampur Kheda · Nashik district</span>
-      <a class="mark" href="#top" aria-label="Urasicous Clean Tech, home">
-        <svg viewBox="0 0 26 26" aria-hidden="true"><path fill="#f6c624" d="M6 0h14l6 6v14l-6 6H6l-6-6V6z"/><path fill="#0b2219" d="M12 3h2v20h-2zM3 12h20v2H3z"/></svg>
-        Urasicous Clean Tech
-      </a>
-      <span class="right">
-        <a href="#dashboard">Live grid</a>
-        <a href="#finances">Finances</a>
-        <a class="keep" href="#prototype">Proposal</a>
-      </span>
+<header class="site-nav" id="top">
+  <div class="wrap nav-in">
+    <a class="mark" href="index.html" aria-label="Urasicous Clean Tech, home"><svg viewBox="0 0 26 26" aria-hidden="true"><path fill="#f6c624" d="M6 0h14l6 6v14l-6 6H6l-6-6V6z"/><path fill="#0b2219" d="M12 3h2v20h-2zM3 12h20v2H3z"/></svg>Urasicous Clean Tech</a>
+    <button type="button" class="nav-btn" aria-expanded="false" aria-controls="navMenu"><span class="bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav-menu" id="navMenu" aria-label="Main">
+      <ol class="nav-links">
+        <li><a href="index.html" aria-current="page"><span class="n">1</span>Home</a></li>
+        <li><a href="village.html"><span class="n">2</span>The village</a></li>
+        <li><a href="system.html"><span class="n">3</span>How it works</a></li>
+        <li><a href="innovation.html"><span class="n">4</span>Innovation</a></li>
+        <li><a href="dashboard.html" class="live"><span class="n">5</span>Live dashboard</a></li>
+        <li><a href="finances.html"><span class="n">6</span>Finances</a></li>
+        <li><a href="governance.html"><span class="n">7</span>Governance</a></li>
+        <li><a href="prototype.html"><span class="n">8</span>Prototype</a></li>
+      </ol>
     </nav>
+  </div>
+</header>
 
+<header class="hero">
+  <div class="wrap">
     <div class="hero-copy">
       <h1><span>Urasicous</span> <span>Clean Tech</span></h1>
-      <p class="tagline">Empowering rural communities through next-gen solar microgrids.</p>
+      <p class="tagline">Lights that stay on for village homes, from a solar grid the village owns.</p>
       <p class="byline">Engineered by <strong>Team Pioneering Sol-Gen</strong></p>
     </div>
 
     <div class="folders">
-      <a class="folder" href="#initiative" style="--i:0"><span class="tab">The initiative</span><span class="body"></span></a>
-      <a class="folder" href="#system" style="--i:1"><span class="tab">System</span><span class="body"></span></a>
-      <a class="folder" href="#finances" style="--i:2"><span class="tab">Finances</span><span class="body"></span></a>
-      <a class="folder" href="#prototype" style="--i:3"><span class="tab">Prototype</span><span class="body"></span></a>
+      <a class="folder" href="village.html" style="--i:0"><span class="tab">The village</span><span class="body"></span></a>
+      <a class="folder" href="system.html" style="--i:1"><span class="tab">How it works</span><span class="body"></span></a>
+      <a class="folder" href="innovation.html" style="--i:2"><span class="tab">Innovation</span><span class="body"></span></a>
+      <a class="folder" href="finances.html" style="--i:3"><span class="tab">Finances</span><span class="body"></span></a>
       <div class="folder front" style="--i:4">
         <h2 class="tab">Live grid</h2>
         <div class="body">
@@ -48,10 +53,10 @@
             <div><dt>Homes on power</dt><dd><span data-bind="homesOn">50</span><small>/ 50</small></dd></div>
           </dl>
           <div class="front-acts">
-            <a class="btn dark" href="#dashboard">Explore live dashboard <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="btn light" href="#prototype">View project proposal</a>
+            <a class="btn dark" href="dashboard.html">Explore live dashboard <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn light" href="village.html">Start the judge's tour</a>
           </div>
-          <p class="front-note">Live figures from the simulated Rampur Kheda control room, at <span data-bind="clock">--:--</span> simulated time.</p>
+          <p class="front-note">Live numbers from our simulated Rampur Kheda control room, where it's <span data-bind="clock">--:--</span> right now.</p>
         </div>
       </div>
     </div>
@@ -60,371 +65,65 @@
 
 <main>
 
-<!-- ================= INTRO STATEMENT ================= -->
 <section class="intro wrap" aria-label="Summary">
   <p class="statement rise">
-    Rampur Kheda <img class="thumb" src="assets/anjenari-village-nashik.jpg" alt="" width="60" height="42"> loses power four to six hours a day.
-    Eighty panels <img class="thumb" src="assets/solar-panels-closeup.jpg" alt="" width="60" height="42"> and one battery bank will keep fifty homes
+    Rampur Kheda <img class="thumb" src="assets/anjenari-village-nashik.jpg" alt="" width="60" height="42"> goes dark for four to six hours every day.
+    Seventy-three panels <img class="thumb" src="assets/solar-panels-closeup.jpg" alt="" width="60" height="42">, raised high over growing crops, and one battery bank will keep fifty homes
     <img class="thumb" src="assets/traditional-house-solar-zamtang-zanskar-jun24-a7cr.jpg" alt="" width="60" height="42"> lit through every cut.
   </p>
 </section>
 
-<!-- ================= PROJECT OVERVIEW ================= -->
-<section class="section wrap" id="initiative">
+<!-- ================= IMPACT ================= -->
+<section class="section wrap" aria-labelledby="impact-h">
   <div class="section-head">
-    <h2 class="rise">The Rampur Kheda Initiative</h2>
-    <p class="rise" style="--d:80ms">Rampur Kheda is a farming village 38 km from Nashik: 2,400 people in 480 households, growing wheat and cotton, running a dairy, a flour mill and a few shops. Families fall back on diesel generators during cuts that stretch to 8 hours in summer. Our first phase brings 50 households onto a community-owned microgrid, built to scale out to the whole village.</p>
+    <h2 class="rise" id="impact-h">What changes for Rampur Kheda</h2>
+    <p class="rise" style="--d:80ms">Our estimates for a full year of phase one, worked out from the household survey and the array size. The sums are shown underneath so you can check them.</p>
   </div>
+  <ul class="impact">
+    <li class="cell-shape t-solar rise"><b>~64,000</b><span>kWh of clean electricity a year</span></li>
+    <li class="cell-shape t-forest rise" style="--d:70ms"><b>~46 t</b><span>of CO₂ kept out of the air each year</span></li>
+    <li class="cell-shape t-mid rise" style="--d:140ms"><b>Up to 23,000 L</b><span>of generator diesel no longer needed each year</span></li>
+    <li class="cell-shape t-mist rise" style="--d:210ms"><b>4–6 h</b><span>of daily power cuts covered for all 50 homes</span></li>
+  </ul>
+  <p class="impact-note">How we worked it out: 40 kWp × 5.5 sun hours × 80% efficiency × 365 days ≈ 64,240 kWh. At India's grid emission factor of about 0.71 kg CO₂ per kWh, that is roughly 45.6 tonnes. Diesel assumes the 188.64 kWh the village uses each day during cuts would otherwise come from small generators making about 3 kWh per litre: 188.64 ÷ 3 × 365 ≈ 22,950 litres. That's an upper limit, since not every family runs a generator today.</p>
 
-  <div class="tiles">
-    <div class="tile cell-shape t-forest rise"><div class="fig">40<small>kWp</small></div><p class="cap">Solar array</p></div>
-    <div class="tile cell-shape t-solar rise" style="--d:70ms"><div class="fig">90<small>kWh</small></div><p class="cap">LiFePO4 battery storage</p></div>
-    <div class="tile cell-shape photo rise" style="--d:140ms"><img src="assets/rooftop-solar-power-plant.jpg" alt="Rows of monocrystalline solar panels on steel frames" width="1920" height="1080" loading="lazy"></div>
-    <div class="tile cell-shape t-mist rise" style="--d:210ms"><div class="fig fig-long">₹1,200<small>once</small></div><p class="cap">Per-household contribution</p></div>
-    <div class="tile cell-shape t-mid rise"><div class="fig">&lt;3<small>years</small></div><p class="cap">Payback period</p></div>
-    <div class="tile cell-shape photo rise" style="--d:70ms"><img src="assets/anjenari-village-nashik.jpg" alt="Village houses with red roofs on green hills near Nashik in the monsoon" width="1920" height="1440" loading="lazy"></div>
-    <div class="tile cell-shape t-forest rise" style="--d:140ms"><div class="fig">50<small>homes</small></div><p class="cap">Phase one, of 480 in the village</p></div>
-    <div class="tile cell-shape t-solar rise" style="--d:210ms"><div class="fig">80<small>panels</small></div><p class="cap">500 W high-efficiency modules</p></div>
-  </div>
-
-  <div class="sizing">
-    <div class="rise">
-      <h3>How we sized it</h3>
-      <p style="margin-top:14px">We logged what five typical households run during a power cut, then scaled the average to 50 homes and added 20% for street lights and the shared water pump.</p>
-      <div class="sum">
-        <div><span>Average household need</span><b>3,144 Wh / day</b></div>
-        <div><span>50 households</span><b>157.2 kWh / day</b></div>
-        <div><span>+20% community loads</span><b>31.44 kWh / day</b></div>
-        <div class="total"><span>Village requirement</span><b>188.64 kWh / day</b></div>
-      </div>
-      <p style="margin-top:18px">At 5.5 peak sun hours and 80% system efficiency, that calls for about 43 kW of panels. We specify 40 kWp of modules and let the battery bank carry the evening peak.</p>
-    </div>
-    <div class="table-scroll rise" style="--d:90ms">
-      <table class="loads">
-        <thead><tr><th>Household</th><th>Appliances during cuts</th><th class="num">Daily use</th></tr></thead>
-        <tbody>
-          <tr><td class="who">Farming family</td><td class="apps">Water pump 750 W × 2 h, 3 bulbs 15 W × 4 h, fan 75 W × 6 h, phone 10 W × 2 h</td><td class="num">2,150 Wh</td></tr>
-          <tr><td class="who">Shop owners</td><td class="apps">2 tube lights 40 W × 5 h, cold-drink fridge 150 W × 24 h, fan 75 W × 5 h, TV 100 W × 2 h</td><td class="num">4,575 Wh</td></tr>
-          <tr><td class="who">Dairy farmers</td><td class="apps">Milk chiller 500 W × 4 h, 2 bulbs 15 W × 4 h, fan 75 W × 6 h, water pump 750 W × 1 h</td><td class="num">3,320 Wh</td></tr>
-          <tr><td class="who">Flour mill</td><td class="apps">Mill motor 1,500 W × 3 h, 3 bulbs 15 W × 4 h, fan 75 W × 5 h, phone 10 W × 3 h</td><td class="num">5,085 Wh</td></tr>
-          <tr><td class="who">Daily-wage family</td><td class="apps">2 bulbs 15 W × 4 h, fan 75 W × 6 h, phone 10 W × 2 h</td><td class="num">590 Wh</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <div class="sdg-row">
+    <p class="sdg-lead rise">Supports the UN Sustainable Development Goals</p>
+    <ul class="sdgs">
+      <li class="sdg rise" style="--sdg:#FCC30B;--sdg-ink:#12201a"><b>7</b><span>Affordable and clean energy</span></li>
+      <li class="sdg rise" style="--sdg:#3F7E44;--d:70ms"><b>13</b><span>Climate action</span></li>
+      <li class="sdg rise" style="--sdg:#DDA63A;--sdg-ink:#12201a;--d:140ms"><b>2</b><span>Zero hunger, through crops grown under the panels</span></li>
+    </ul>
   </div>
 </section>
 
-<!-- ================= LIVE DASHBOARD ================= -->
-<section class="dash-band" id="dashboard">
-  <div class="wrap">
-    <div class="section-head">
-      <h2 class="rise">Live microgrid dashboard</h2>
-      <p class="rise" style="--d:80ms">The control room the village committee will use, running on a <strong>simulated</strong> day in Rampur Kheda. Generation follows the sun, the grid drops out on the usual cut schedule, and the battery picks up the load. Speed it up to watch a whole day, or pick a house to read its meter.</p>
-    </div>
-
-    <div class="dash">
-      <div class="dash-top" data-ui>
-        <div>
-          <h3 class="title">Rampur Kheda control room</h3>
-          <p class="finding"><span class="state-dot" id="stateDot"></span><span id="finding">Starting simulation…</span></p>
-        </div>
-        <div class="dash-ctrls">
-          <div><div class="clock" data-bind="clock">--:--</div><div class="clock-sub">Simulated time</div></div>
-          <div class="seg" role="group" aria-label="Simulation speed">
-            <button type="button" data-speed="1" id="sp1">Real time</button>
-            <button type="button" data-speed="60" id="sp60" aria-pressed="true">1 min / sec</button>
-            <button type="button" data-speed="720" id="sp720">Day in 2 min</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="dash-grid" data-ui>
-        <div class="panel p-solar">
-          <div class="solar-row">
-            <div>
-              <h3>Solar generation</h3>
-              <div class="big solar-big"><span data-bind="solarKw">0.0</span><small>kW</small></div>
-              <dl class="kv">
-                <dt>Capacity</dt><dd>40 kWp</dd>
-                <dt>Generated today</dt><dd><span data-bind="genToday">0</span> kWh</dd>
-                <dt>Village load</dt><dd><span data-bind="loadKw">0.0</span> kW</dd>
-              </dl>
-            </div>
-            <div style="min-width:0">
-              <svg class="chart" id="chart" viewBox="0 0 600 150" preserveAspectRatio="none" role="img" aria-label="Today's solar output and village load by hour"></svg>
-              <div class="legend"><span><i></i>Solar output</span><span><i class="l"></i>Village load</span><span><i class="c"></i>Grid cut</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <h3>Battery storage · LiFePO4</h3>
-          <div class="big"><span data-bind="soc">0</span><small>% charged</small></div>
-          <div class="soc-bar" aria-hidden="true"><div class="soc-fill" id="socFill"></div><div class="soc-ticks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
-          <dl class="kv">
-            <dt>Stored</dt><dd><span data-bind="kwhStored">0</span> of 90 kWh</dd>
-            <dt>Flow</dt><dd id="battFlow">–</dd>
-            <dt>Backup at this load</dt><dd><span data-bind="backup">–</span></dd>
-          </dl>
-        </div>
-
-        <div class="panel">
-          <h3>Net metering</h3>
-          <div class="ticker">₹<span data-bind="earn">0.00</span></div>
-          <p style="color:var(--muted);font-size:14px;margin-top:2px">Grid export earnings today</p>
-          <dl class="kv">
-            <dt>Exported today</dt><dd><span data-bind="expToday">0.0</span> kWh</dd>
-            <dt>Export rate</dt><dd>₹3.10 / kWh</dd>
-            <dt>Grid</dt><dd><span class="pill" id="gridPill">–</span></dd>
-          </dl>
-        </div>
-      </div>
-
-      <div class="dash-lower" data-ui>
-        <div class="panel">
-          <div class="module-head">
-            <h3>Households · smart prepaid meters</h3>
-            <p><span data-bind="homesOn">50</span> of 50 connected · <span data-bind="lowCount">0</span> low balance</p>
-          </div>
-          <div class="module" id="module" role="group" aria-label="House 01 to 50"></div>
-        </div>
-        <div class="panel detail" id="detail" aria-live="polite"></div>
-      </div>
-      <p class="dash-foot">Simulated data for demonstration. Load profiles come from the five-household survey; grid cuts are modelled at 14:00–18:00 and 21:00–23:00; prepaid tariff ₹5.00 / kWh.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ARCHITECTURE ================= -->
-<section class="section wrap" id="system">
+<!-- ================= JUDGE'S QUICK TOUR ================= -->
+<section class="section wrap" aria-labelledby="tour-h">
   <div class="section-head">
-    <h2 class="rise">Generate, store, distribute</h2>
-    <p class="rise" style="--d:80ms">Power moves one way through the system: from the array, through the power house, out to every meter. Open each stage to see the hardware we specify.</p>
+    <h2 class="rise" id="tour-h">Judge's quick tour</h2>
+    <p class="rise" style="--d:80ms">The project in seven short stops. Go in order with the Next button at the bottom of each page, or jump straight to whatever you want to see.</p>
   </div>
-
-  <div class="acc" id="acc">
-    <div class="stage" role="button" tabindex="0" aria-expanded="true" aria-label="Generate">
-      <span class="rot">Generate</span>
-      <div class="open">
-        <div class="txt">
-          <h3>Generate<small>40 kWp solar array</small></h3>
-          <div>
-            <p>Eighty 500 W monocrystalline modules on ground mounts, in series-parallel strings, tilted 15° to the south for year-round capture.</p>
-            <ul class="specs">
-              <li>80 × 500 W high-efficiency panels</li>
-              <li>About 176 kWh on a clear day at 5.5 sun hours</li>
-              <li>DC cabling run to the central power house</li>
-            </ul>
-          </div>
-        </div>
-        <figure class="pic" style="margin:0"><img class="drift" src="assets/rooftop-solar-power-plant.jpg" alt="Monocrystalline solar panels on a steel frame" width="1920" height="1080" loading="lazy"><figcaption>A comparable array of 500 W-class modules</figcaption></figure>
-      </div>
-    </div>
-    <div class="stage" role="button" tabindex="0" aria-expanded="false" aria-label="Store">
-      <span class="rot">Store</span>
-      <div class="open">
-        <div class="txt">
-          <h3>Store<small>90 kWh LiFePO4 BESS + MGCC</small></h3>
-          <div>
-            <p>A lithium iron phosphate battery bank holds the midday surplus for the evening and every grid cut. The Microgrid Central Controller decides when to charge, discharge, island and export.</p>
-            <ul class="specs">
-              <li>Round-trip efficiency above 92%</li>
-              <li>6,000+ cycles at 80% depth of discharge</li>
-              <li>Integrated BMS, switch-over under 20 ms</li>
-            </ul>
-          </div>
-        </div>
-        <figure class="pic" style="margin:0;background:var(--forest-900)">
-          <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Drawing of the battery racks in the power house">
-            <rect width="400" height="400" fill="#0f2e22"/>
-            <g fill="#1f5039"><rect x="40" y="70" width="96" height="270"/><rect x="152" y="70" width="96" height="270"/><rect x="264" y="70" width="96" height="270"/></g>
-            <g fill="#9dc3ad">
-              <rect x="50" y="84" width="76" height="34"/><rect x="50" y="126" width="76" height="34"/><rect x="50" y="168" width="76" height="34"/><rect x="50" y="210" width="76" height="34"/><rect x="50" y="252" width="76" height="34"/><rect x="50" y="294" width="76" height="34"/>
-              <rect x="162" y="84" width="76" height="34"/><rect x="162" y="126" width="76" height="34"/><rect x="162" y="168" width="76" height="34"/><rect x="162" y="210" width="76" height="34"/><rect x="162" y="252" width="76" height="34"/><rect x="162" y="294" width="76" height="34"/>
-              <rect x="274" y="84" width="76" height="34"/><rect x="274" y="126" width="76" height="34"/><rect x="274" y="168" width="76" height="34"/><rect x="274" y="210" width="76" height="34"/><rect x="274" y="252" width="76" height="34"/><rect x="274" y="294" width="76" height="34"/>
-            </g>
-            <g fill="#f6c624"><rect x="58" y="96" width="8" height="8"/><rect x="170" y="96" width="8" height="8"/><rect x="282" y="96" width="8" height="8"/><rect x="58" y="138" width="8" height="8"/><rect x="170" y="138" width="8" height="8"/><rect x="282" y="138" width="8" height="8"/></g>
-            <rect x="40" y="350" width="320" height="10" fill="#3d7a58"/>
-            <text x="40" y="52" fill="#fbfcfa" font-family="Jost, sans-serif" font-size="18" font-weight="600">3 racks · 18 modules · 5 kWh each</text>
-          </svg>
-          <figcaption>Battery racks in the power house (drawing)</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="stage" role="button" tabindex="0" aria-expanded="false" aria-label="Distribute">
-      <span class="rot">Distribute</span>
-      <div class="open">
-        <div class="txt">
-          <h3>Distribute<small>Cables, meters and protection</small></h3>
-          <div>
-            <p>Armoured cables run underground and on poles from the power house to every lane. Each home gets its own smart prepaid meter, MCB and ELCB, with lightning arresters and earth pits across the network.</p>
-            <ul class="specs">
-              <li>Armoured underground and overhead lines</li>
-              <li>50 smart prepaid meters, one per home</li>
-              <li>MCBs, ELCBs and a full earthing system</li>
-            </ul>
-          </div>
-        </div>
-        <figure class="pic" style="margin:0"><img class="drift" src="assets/logarex-smart-household-electricity-meter-build-year.jpg" alt="A smart household electricity meter with a digital kWh display" width="1920" height="1867" loading="lazy"><figcaption>A smart household meter of the kind each home receives</figcaption></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FINANCES ================= -->
-<section class="section wrap" id="finances">
-  <div class="section-head">
-    <h2 class="rise">Financial transparency</h2>
-    <p class="rise" style="--d:80ms">The full build costs ₹36.1 lakh, itemised below at market rates. Subsidy and grants carry almost all of it, so each family's share stays at a one-time token that gives them a real stake in the grid.</p>
-  </div>
-
-  <div class="fin">
-    <div class="field bill cell-shape rise">
-      <h3>Market bill</h3>
-      <div class="table-scroll">
-        <table class="bill-t">
-          <tbody>
-            <tr><td>Solar panels &amp; generation<span class="sub">40 kWp, 80 × 500 W modules, mounting structures, DC wiring</span></td><td>₹14,00,000</td></tr>
-            <tr><td>Battery energy storage<span class="sub">90 kWh LiFePO4 bank with BMS</span></td><td>₹12,00,000</td></tr>
-            <tr><td>Inverters &amp; control (MGCC)<span class="sub">Microgrid Central Controller and power conversion</span></td><td>₹4,00,000</td></tr>
-            <tr><td>Wiring &amp; distribution<span class="sub">Armoured backbone cable, poles, service lines</span></td><td>₹2,50,000</td></tr>
-            <tr><td>Household metering<span class="sub">50 smart prepaid meters, MCBs, ELCBs, drop lines</span></td><td>₹1,50,000</td></tr>
-            <tr><td>Safety &amp; protection<span class="sub">MCCBs, fuse cut-outs, surge protection, lightning arresters</span></td><td>₹1,20,000</td></tr>
-            <tr><td>Earthing &amp; grounding<span class="sub">Power house earth pits, pole earth rods, household electrodes</span></td><td>₹90,000</td></tr>
-            <tr class="gross"><td>Total gross capital cost</td><td>₹36,10,000</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="field share rise" style="--d:100ms">
-      <h3>Who pays</h3>
-      <div class="price">
-        <div><div class="amt">₹1,200</div><span class="per">per household, paid once</span></div>
-        <a class="btn dark" href="#prototype">View project proposal</a>
-      </div>
-      <div class="flow-steps">
-        <div><span>Gross capital cost</span><b>₹36,10,000</b></div>
-        <div class="minus"><span>Government subsidy, 60% (PM-KUSUM / rural schemes)</span><b>₹21,66,000</b></div>
-        <div class="minus"><span>CSR &amp; state grants</span><b>₹13,84,000</b></div>
-        <div><span>Community share: 50 homes × ₹1,200</span><b>₹60,000</b></div>
-      </div>
-      <p class="payback">Projected payback under 3 years, from grid-export earnings and the diesel families no longer buy. After that, export income funds the maintenance account.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= GOVERNANCE ================= -->
-<section class="section wrap" id="governance">
-  <div class="section-head">
-    <h2 class="rise">Run by the village</h2>
-    <p class="rise" style="--d:80ms">The grid belongs to the households it serves. A Village Electricity Committee runs it, collects fees and handles faults, with a professional service contract behind them.</p>
-  </div>
-  <div class="gov">
-    <div class="committee cell-shape rise">
-      <h3>The committee</h3>
-      <ul>
-        <li><b>Chairperson</b>Guides strategy and community coordination.</li>
-        <li><b>Treasurer</b>Handles fees and keeps the public account books.</li>
-        <li><b>Lead technician</b>Runs weekly checks on the panels and batteries.</li>
-        <li><b>Two village representatives</b>Speak directly for the households.</li>
-      </ul>
-      <p>Elected openly every two years by show of hands at the village assembly. Fees are a flat monthly maintenance charge tiered by usage, collected in the first week.</p>
-    </div>
-    <div class="qa">
-      <div class="rise"><h3>What happens during the monsoon or on cloudy days?</h3><p>The battery keeps a reserve that bridges low-generation days, and monocrystalline panels still harvest diffuse light under cloud. On long grey spells the grid connection tops the battery up when it is available.</p></div>
-      <div class="rise" style="--d:80ms"><h3>What if households delay or fail to pay?</h3><p>Smart prepaid meters pause supply when credit runs out, so no debt builds up. The committee handles hardship cases through open, peer-to-peer accountability.</p></div>
-      <div class="rise" style="--d:160ms"><h3>Who fixes breakdowns?</h3><p>A trained local technician runs weekly checks. Major components are covered by an annual maintenance contract with a professional service provider.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PROTOTYPE & GALLERY ================= -->
-<section class="section wrap" id="prototype">
-  <div class="section-head">
-    <h2 class="rise">Prototype &amp; innovation</h2>
-    <p class="rise" style="--d:80ms">Before the real grid, we built it at desk scale. Browse the layout sketch, the working cardboard model, what it cost us, and the full project report.</p>
-  </div>
-
-  <div class="proto">
-    <div>
-      <ul class="idx" role="tablist" aria-label="Prototype items">
-        <li><button role="tab" id="t-sketch" aria-selected="true" aria-controls="p-sketch" data-tone="mist" data-fact="Hand-drawn layout of the full village grid: generation zone, central power house with MGCC, inverters and BESS, and the AC backbone on poles and underground to every lane.">Sketch plan</button></li>
-        <li><button role="tab" id="t-model" aria-selected="false" aria-controls="p-model" data-tone="forest" data-fact="A cardboard village wired to a working mini solar panel and battery. LEDs in each house light from the panel by day and from the battery when we cut the 'grid' switch.">Cardboard prototype</button></li>
-        <li><button role="tab" id="t-bill" aria-selected="false" aria-controls="p-bill" data-tone="solar" data-fact="Everything that went into the desk model, bought locally. The full working model came in under ₹1,000.">Material cost bill</button></li>
-        <li><button role="tab" id="t-report" aria-selected="false" aria-controls="p-report" data-tone="forest" data-fact="Our complete worksheet for HCL Jigsaw: village research, load calculations, system sizing, costs, governance and the pitch.">Project report</button></li>
-      </ul>
-      <p class="idx-fact" id="idxFact" aria-live="polite"></p>
-      <div class="downloads">
-        <a class="btn" href="assets/Village-Microgrid-Project-Report.pptx" download>Download project report <span aria-hidden="true">(.pptx, 5.7 MB)</span></a>
-        <a class="btn light" style="background:var(--mist)" href="assets/sketch-plan.jpg" download>Sketch plan (.jpg)</a>
-      </div>
-    </div>
-
-    <div class="stagebox" id="stagebox" data-tone="mist">
-      <div class="disc cell-shape"></div>
-      <div class="pane on" id="p-sketch" role="tabpanel" aria-labelledby="t-sketch">
-        <img src="assets/sketch-plan.jpg" alt="Hand-drawn sketch plan of the microgrid: solar array zone, central power house with controller, inverters and battery container, and cable lines to households" width="1204" height="898" loading="lazy">
-      </div>
-      <div class="pane" id="p-model" role="tabpanel" aria-labelledby="t-model">
-        <svg viewBox="0 0 560 430" role="img" aria-label="Drawing of the cardboard prototype: a board with a tilted solar panel, a battery box and five small houses with lit windows">
-          <rect x="30" y="300" width="500" height="70" fill="#c9a26b"/>
-          <rect x="30" y="292" width="500" height="10" fill="#b38b55"/>
-          <g transform="translate(60 150)"><rect x="0" y="100" width="12" height="44" fill="#8a6a3f"/><rect x="96" y="80" width="12" height="64" fill="#8a6a3f"/><polygon points="-10,104 120,76 120,30 -10,58" fill="#1d4a8a"/><g stroke="#cfe0f5" stroke-width="2"><line x1="33" y1="49" x2="33" y2="95"/><line x1="77" y1="39" x2="77" y2="86"/><line x1="-10" y1="81" x2="120" y2="53"/></g></g>
-          <rect x="215" y="236" width="70" height="56" fill="#3d7a58"/><rect x="232" y="226" width="14" height="10" fill="#3d7a58"/><text x="250" y="270" text-anchor="middle" fill="#fbfcfa" font-family="Jost, sans-serif" font-size="15" font-weight="600">BATT</text>
-          <g fill="#d8b47c">
-            <rect x="310" y="232" width="44" height="60"/><polygon points="305,234 332,206 359,234"/>
-            <rect x="372" y="244" width="40" height="48"/><polygon points="367,246 392,222 417,246"/>
-            <rect x="430" y="228" width="48" height="64"/><polygon points="425,230 454,200 483,230"/>
-          </g>
-          <g fill="#f6c624"><rect x="322" y="250" width="12" height="12"/><rect x="384" y="258" width="12" height="12"/><rect x="444" y="246" width="12" height="12"/><rect x="460" y="246" width="12" height="12"/></g>
-          <path d="M168 250 C190 250 200 262 215 262 M285 262 C300 262 300 262 310 262 M354 270 L372 270 M412 270 L430 270" stroke="#0f2e22" stroke-width="3" fill="none"/>
-          <text x="30" y="400" fill="#0f2e22" font-family="Jost, sans-serif" font-size="16">Desk-scale model: panel, battery, five homes on one feeder</text>
-        </svg>
-      </div>
-      <div class="pane" id="p-bill" role="tabpanel" aria-labelledby="t-bill">
-        <div class="receipt">
-          <h4>Prototype material bill</h4>
-          <p>Team Pioneering Sol-Gen · desk model</p>
-          <table>
-            <tbody>
-              <tr><td>Corrugated cardboard sheets (3)</td><td>₹120</td></tr>
-              <tr><td>Mini solar panels, 6 V 1 W (2)</td><td>₹240</td></tr>
-              <tr><td>3.7 V Li-ion cell with holder</td><td>₹150</td></tr>
-              <tr><td>5 mm LEDs (20) and resistors</td><td>₹60</td></tr>
-              <tr><td>Mini DC motor fan</td><td>₹80</td></tr>
-              <tr><td>Toggle switches (4)</td><td>₹60</td></tr>
-              <tr><td>Hook-up wire, glue, tape</td><td>₹90</td></tr>
-              <tr><td>Paints and markers</td><td>₹100</td></tr>
-              <tr class="t"><td>Total</td><td>₹900</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="pane" id="p-report" role="tabpanel" aria-labelledby="t-report">
-        <div class="report-card">
-          <h4>Village Microgrid: Team Worksheet</h4>
-          <p style="color:var(--slate-500);font-size:15px">HCL Jigsaw · Edition 7 · Climate Action &amp; Sustainable Energy · 10 slides</p>
-          <ol>
-            <li>Village profile: Rampur Kheda</li>
-            <li>Household energy needs</li>
-            <li>Solar array sizing</li>
-            <li>Battery storage design</li>
-            <li>Distribution layout sketch</li>
-            <li>Cost breakdown and subsidy</li>
-            <li>Village Electricity Committee</li>
-            <li>Executive summary and pitch</li>
-          </ol>
-          <a class="btn" href="assets/Village-Microgrid-Project-Report.pptx" download>Download .pptx</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <ol class="tour-cards">
+      <li class="rise" style="--d:0ms"><a href="village.html"><span class="tc-n">Step 2</span><h3>The village & the need</h3><p>Who lives in Rampur Kheda, what a power cut costs them, and how we sized the grid.</p><span class="tc-go" aria-hidden="true">→</span></a></li>
+      <li class="rise" style="--d:60ms"><a href="system.html"><span class="tc-n">Step 3</span><h3>How it works</h3><p>Panels, battery and cables: the hardware that gets power from the sun to every home.</p><span class="tc-go" aria-hidden="true">→</span></a></li>
+      <li class="rise" style="--d:120ms"><a href="innovation.html"><span class="tc-n">Step 4</span><h3>Innovation</h3><p>Solar panels raised over crops, and a battery that checks the weather forecast.</p><span class="tc-go" aria-hidden="true">→</span></a></li>
+      <li class="rise" style="--d:180ms"><a href="dashboard.html"><span class="tc-n">Step 5</span><h3>Live dashboard</h3><p>A working simulation of the control room. Speed up the day and switch on the AI.</p><span class="tc-go" aria-hidden="true">→</span></a></li>
+      <li class="rise" style="--d:0ms"><a href="finances.html"><span class="tc-n">Step 6</span><h3>Finances</h3><p>Every rupee of the ₹36.1 lakh build, who pays for it, and how the grid grows.</p><span class="tc-go" aria-hidden="true">→</span></a></li>
+      <li class="rise" style="--d:60ms"><a href="governance.html"><span class="tc-n">Step 7</span><h3>Run by the village</h3><p>The elected committee, fees, repairs and what happens on cloudy days.</p><span class="tc-go" aria-hidden="true">→</span></a></li>
+      <li class="rise" style="--d:120ms"><a href="prototype.html"><span class="tc-n">Step 8</span><h3>Prototype & report</h3><p>Our desk-scale cardboard model, its ₹490 bill and the full project report.</p><span class="tc-go" aria-hidden="true">→</span></a></li>
+  </ol>
 </section>
 
 </main>
 
-<!-- ================= FOOTER ================= -->
+<nav class="tour" aria-label="Judge's tour">
+  <div class="wrap tour-in">
+    <span class="tour-prev" aria-hidden="true"></span>
+    <div class="tour-mid"><span>Step 1 of 8</span><ol class="dots"><li><a href="index.html" aria-label="Step 1: Home" aria-current="page"></a></li><li><a href="village.html" aria-label="Step 2: The village & the need"></a></li><li><a href="system.html" aria-label="Step 3: How it works"></a></li><li><a href="innovation.html" aria-label="Step 4: Innovation"></a></li><li><a href="dashboard.html" aria-label="Step 5: Live dashboard"></a></li><li><a href="finances.html" aria-label="Step 6: Finances"></a></li><li><a href="governance.html" aria-label="Step 7: Run by the village"></a></li><li><a href="prototype.html" aria-label="Step 8: Prototype & report"></a></li></ol></div>
+    <a class="tour-next" href="village.html"><small>Start the tour · Step 2 →</small><b>The village & the need</b></a>
+  </div>
+</nav>
+
 <footer class="foot">
   <div class="wrap">
     <h2 class="foot-line">Power that belongs to Rampur Kheda.</h2>
@@ -441,10 +140,10 @@
     </div>
 
     <div class="foot-cols">
-      <div><h4>Project</h4><a href="#initiative">The initiative</a><a href="#dashboard">Live dashboard</a><a href="#system">System</a></div>
-      <div><h4>Money &amp; people</h4><a href="#finances">Finances</a><a href="#governance">Governance</a><a href="#prototype">Prototype</a></div>
+      <div><h4>The project</h4><a href="index.html">Home</a><a href="village.html">The village</a><a href="system.html">How it works</a><a href="innovation.html">Innovation</a></div>
+      <div><h4>See it working</h4><a href="dashboard.html">Live dashboard</a><a href="finances.html">Finances</a><a href="governance.html">Governance</a><a href="prototype.html">Prototype</a></div>
       <div><h4>Downloads</h4><a href="assets/Village-Microgrid-Project-Report.pptx" download>Project report (.pptx)</a><a href="assets/sketch-plan.jpg" download>Sketch plan (.jpg)</a></div>
-      <div><h4>Site</h4><span>Rampur Kheda, 38 km from Nashik, Maharashtra</span><span>Team Pioneering Sol-Gen</span></div>
+      <div><h4>Get in touch</h4><span>Rampur Kheda, 38 km from Nashik, Maharashtra</span><span>Team Pioneering Sol-Gen</span><span>Support: <a class="mail" href="mailto:67811urasicousct@gmail.com">67811urasicousct@gmail.com</a></span></div>
     </div>
 
     <p class="credits">Pictures: <a href="https://commons.wikimedia.org/w/index.php?curid=152914959">“Traditional House Solar Zamtang Zanskar”</a> by Timothy A. Gonsalves, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=42551914">“Anjenari village, Nashik”</a> by Mahi29, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=44112543">“Rooftop solar power plant”</a> by Oleg Savitsky, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Logarex_smart_household_electricity_meter_build_year_2023.jpg">“Logarex smart household electricity meter”</a> by RobbieIanMorrison, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Solar_panels_closeup.jpg">“Solar panels closeup”</a> by Jollyroger, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>. All via Wikimedia Commons.</p>
@@ -456,6 +155,7 @@
   </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="sim.js"></script>
+<script src="common.js"></script>
 </body>
 </html>

@@ -78,7 +78,7 @@ The team designed a **community-owned solar microgrid**. Its first phase covers 
 | ☀️ Solar array | 🔋 Battery storage | 🏠 Homes | 💰 Per household | ⏱️ Payback |
 | :---: | :---: | :---: | :---: | :---: |
 | **40 kWp** | **90 kWh** | **50** | **₹1,200** | **< 3 years** |
-| 80 × 500 W panels | LiFePO4 + MGCC | phase one of 480 | paid once | projected |
+| 73 × 550 W panels | LiFePO4 + MGCC | phase one of 480 | paid once | projected |
 
 </div>
 
@@ -193,7 +193,7 @@ Power flows one way: from the array, through the central power house, out to eve
 ```mermaid
 flowchart LR
     subgraph G["☀️ GENERATE"]
-        P["40 kWp array<br>80 × 500 W panels<br>15° south tilt"]
+        P["40 kWp array<br>73 × 550 W panels<br>elevated 3 m over crops"]
     end
     subgraph S["🔋 STORE · Central power house"]
         I["Inverters"]
@@ -222,7 +222,7 @@ flowchart LR
 <img src="assets/rooftop-solar-power-plant.jpg" alt="Rows of monocrystalline solar panels" width="100%">
 
 **Generate**<br>
-80 × 500 W monocrystalline modules on ground mounts, in series-parallel strings. About 176 kWh on a clear day.
+73 × 550 W monocrystalline modules on elevated 3 m mounts with crops underneath, in series-parallel strings. About 176 kWh on a clear day.
 </td>
 <td width="33%" valign="top">
 <img src="docs/screenshots/system-store.jpg" alt="The Store stage on the website, showing the battery racks" width="100%">
@@ -289,7 +289,7 @@ pie showData
 
 | Item | Detail | Cost |
 | --- | --- | ---: |
-| Solar panels & generation | 40 kWp, 80 × 500 W modules, mounting structures, DC wiring | ₹14,00,000 |
+| Solar panels & generation | 40 kWp, 73 × 550 W modules, elevated mounting structures, DC wiring | ₹14,00,000 |
 | Battery energy storage | 90 kWh LiFePO4 bank with BMS | ₹12,00,000 |
 | Inverters & control (MGCC) | Microgrid Central Controller and power conversion | ₹4,00,000 |
 | Wiring & distribution | Armoured backbone cable, poles, service lines | ₹2,50,000 |
@@ -400,7 +400,7 @@ git clone https://github.com/Roushan-2104/Urasicous-Clean-Tech.git
 cd Urasicous-Clean-Tech
 ```
 
-Open `index.html` in any browser, or serve the folder:
+Open `index.html` in any browser and use the menu or the Next buttons, or serve the folder:
 
 ```bash
 python -m http.server 8000
@@ -417,9 +417,17 @@ python -m http.server 8000
 
 ```
 Urasicous-Clean-Tech/
-├── index.html          # all page sections
+├── index.html          # 1 · Home: summary, impact, SDGs, judge's tour
+├── village.html        # 2 · The village & the need, load survey, sizing
+├── system.html         # 3 · How it works: generate, store, distribute
+├── innovation.html     # 4 · Agrivoltaics + AI Weather Forecast Mode
+├── dashboard.html      # 5 · Live microgrid dashboard (simulation)
+├── finances.html       # 6 · Costs, who pays, scaling roadmap
+├── governance.html     # 7 · Village Electricity Committee, Q&A
+├── prototype.html      # 8 · Desk prototype, bill, project report
 ├── styles.css          # design tokens, layout, responsive rules
-├── app.js              # microgrid simulation, dashboard, interactions
+├── sim.js              # microgrid simulation (home + dashboard)
+├── common.js           # menu, glossary tooltips, accordion, prototype tabs
 ├── assets/
 │   ├── Village-Microgrid-Project-Report.pptx   # the team's worksheet
 │   ├── sketch-plan.jpg                          # the team's layout sketch
@@ -435,7 +443,7 @@ Urasicous-Clean-Tech/
 - The headline figures (50 homes, 40 kWp, 90 kWh, ₹36.1 lakh, ₹1,200, under 3 years) follow the project brief. The village profile, load survey, battery specifications, governance model and pitch answers come from the team's worksheet.
 - The worksheet also has a larger whole-village design (480 homes, 377 kWp, about ₹1.95 crore). The website presents the **50-household first phase**.
 - The itemised bill splits ₹36.1 lakh across components at estimated market rates. The 60% subsidy is applied to the gross cost.
-- The cardboard prototype appears as a drawing, and its material bill (₹900) is a sample. Both are to be replaced with the team's real photo and bill.
+- The cardboard prototype appears as a drawing, and its material bill (₹490) is a sample. Both are to be replaced with the team's real photo and bill.
 
 ---
 
