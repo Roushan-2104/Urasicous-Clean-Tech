@@ -1,24 +1,25 @@
 <div align="center">
 
-<img src="docs/screenshots/hero.jpg" alt="Urasicous Clean Tech website hero: the company name, tagline and live figures from the simulated microgrid" width="100%">
+<img src="docs/screenshots/hero.jpg" alt="Urasicous Clean Tech home page: the company name, tagline, page menu and live figures from the simulated microgrid" width="100%">
 
 # Urasicous Clean Tech
 
-**Empowering rural communities through next-gen solar microgrids.**
+**Lights that stay on for village homes, from a solar grid the village owns.**
 
-A landing page and live, simulated control-room dashboard for a community solar microgrid<br>serving **50 households in Rampur Kheda**, a farming village 38 km from Nashik, Maharashtra.
+An eight-page website, with a guided tour for judges and a live, simulated control room, for a community solar microgrid<br>serving **50 households in Rampur Kheda**, a farming village 38 km from Nashik, Maharashtra.
 
 ![HCL Jigsaw](https://img.shields.io/badge/HCL_Jigsaw-Edition_7-0f2e22?style=for-the-badge)
 ![Team](https://img.shields.io/badge/Team-Pioneering_Sol--Gen-1f5039?style=for-the-badge)
-![Solar](https://img.shields.io/badge/Solar-40_kWp-f6c624?style=for-the-badge&labelColor=0f2e22)
+![Solar](https://img.shields.io/badge/Solar-40_kWp_over_crops-f6c624?style=for-the-badge&labelColor=0f2e22)
 ![Storage](https://img.shields.io/badge/Storage-90_kWh_LiFePO4-9dc3ad?style=for-the-badge&labelColor=0f2e22)
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![No build step](https://img.shields.io/badge/build-none_needed-3d7a58?style=flat-square)
+![Pages](https://img.shields.io/badge/pages-8-1f5039?style=flat-square)
 
-[**Credits**](#credits) · [**The project**](#project) · [**Live dashboard**](#dashboard) · [**System**](#system) · [**Finances**](#finances) · [**Run it**](#run)
+[**Credits**](#credits) · [**Judge's tour**](#tour) · [**The project**](#project) · [**Innovation**](#innovation) · [**Live dashboard**](#dashboard) · [**Finances**](#finances) · [**Run it**](#run) · [**Contact**](#contact)
 
 </div>
 
@@ -53,6 +54,44 @@ I designed and built this website to present the team's project. The ideas, rese
 
 ---
 
+<a id="tour"></a>
+
+## 🧭 The judge's tour
+
+The site is split into eight short pages, one idea each, so a judge can go through it in order or jump straight to what they want to see.
+
+| Step | Page | What's on it |
+| :---: | --- | --- |
+| 1 | [`index.html`](index.html) **Home** | The problem in one line, live figures, yearly impact, UN SDG badges and a card for every other page |
+| 2 | [`village.html`](village.html) **The village & the need** | Rampur Kheda, the five-household power-cut survey, and how the grid was sized |
+| 3 | [`system.html`](system.html) **How it works** | Generate → store → distribute, with the hardware for each stage |
+| 4 | [`innovation.html`](innovation.html) **Innovation** | Smart agrivoltaics, and AI Weather Forecast Mode |
+| 5 | [`dashboard.html`](dashboard.html) **Live dashboard** | The simulated control room, with the AI switch |
+| 6 | [`finances.html`](finances.html) **Finances** | The ₹36.1 lakh bill, who pays, and the plan to reach all 480 homes |
+| 7 | [`governance.html`](governance.html) **Run by the village** | The elected committee, fees, repairs and the tough questions |
+| 8 | [`prototype.html`](prototype.html) **Prototype & report** | Sketch plan, cardboard model, its ₹490 bill and the full report |
+
+**Finding the way:**
+- A sticky **menu bar** on every page highlights where you are, with *Live dashboard* always in yellow. On phones it becomes a numbered menu.
+- Every page header shows **"Step X of 8"**.
+- A **tour bar** at the bottom of every page has *Previous* / *Next* buttons and eight dots for jumping to any step.
+- Technical words (kWp, LiFePO4, MGCC, BMS, net metering, PM-KUSUM…) have a **dotted underline**. Tap or hover for a plain-English meaning.
+
+<table>
+<tr>
+<td width="68%" valign="top">
+<img src="docs/screenshots/tour.jpg" alt="The judge's quick tour cards on the home page, one for each of the seven other pages" width="100%">
+<img src="docs/screenshots/tour-bar.jpg" alt="The tour bar at the bottom of a page, with previous and next links and eight step dots" width="100%">
+</td>
+<td width="32%" valign="top">
+<img src="docs/screenshots/mobile-menu.jpg" alt="The numbered page menu open on a phone" width="100%">
+<div align="center"><sub>The menu on a phone</sub></div>
+</td>
+</tr>
+</table>
+
+---
+
 <a id="project"></a>
 
 ## 🌾 The project
@@ -61,9 +100,9 @@ I designed and built this website to present the team's project. The ideas, rese
 <tr>
 <td width="55%" valign="top">
 
-Rampur Kheda has **2,400 people in 480 households**. They grow wheat and cotton and run a small dairy, a flour mill and a few shops. Power cuts last **4–6 hours a day, up to 8 in summer**, and families fall back on noisy, polluting diesel generators while free sunlight goes unused.
+Rampur Kheda has **2,400 people in 480 households**. They grow wheat and cotton and run a small dairy, a flour mill and a few shops. The power goes out for **4–6 hours a day, up to 8 in summer**. Families who can afford it start up diesel generators, and everyone else waits in the dark.
 
-The team designed a **community-owned solar microgrid**. Its first phase covers 50 homes and is built to scale out to the whole village.
+The team designed a **community-owned solar microgrid**. Its first phase covers 50 homes and is built so the rest of the village can join later.
 
 </td>
 <td width="45%" valign="top">
@@ -78,15 +117,27 @@ The team designed a **community-owned solar microgrid**. Its first phase covers 
 | ☀️ Solar array | 🔋 Battery storage | 🏠 Homes | 💰 Per household | ⏱️ Payback |
 | :---: | :---: | :---: | :---: | :---: |
 | **40 kWp** | **90 kWh** | **50** | **₹1,200** | **< 3 years** |
-| 73 × 550 W panels | LiFePO4 + MGCC | phase one of 480 | paid once | projected |
+| 73 × 550 W panels, raised over crops | LiFePO4 + MGCC | phase one of 480 | paid once | projected |
 
 </div>
 
-<img src="docs/screenshots/overview.jpg" alt="The key-figure tiles on the website" width="100%">
+<img src="docs/screenshots/overview.jpg" alt="The key-figure tiles on the village page" width="100%">
+
+### What changes for the village
+
+<img src="docs/screenshots/impact.jpg" alt="Impact estimates on the home page and the UN Sustainable Development Goal badges" width="100%">
+
+| Per year (estimates) | | How it's worked out |
+| --- | ---: | --- |
+| ⚡ Clean electricity | **~64,000 kWh** | 40 kWp × 5.5 sun hours × 80% × 365 days ≈ 64,240 kWh |
+| 🌍 CO₂ avoided | **~46 t** | 64,240 kWh × ~0.71 kg CO₂ per kWh (India's grid emission factor) |
+| 🛢️ Diesel no longer needed | **up to 23,000 L** | 188.64 kWh a day during cuts ÷ ~3 kWh per litre × 365. An upper limit, since not every family runs a generator today. |
+
+**UN Sustainable Development Goals:** 🟨 **7** Affordable and clean energy · 🟩 **13** Climate action · 🟧 **2** Zero hunger, through the crops grown under the panels.
 
 ### How the team sized it
 
-The team logged what five typical households run during a power cut, scaled the average to 50 homes, and added 20% for street lights and the shared water pump.
+The team sat down with five typical households, wrote down everything they run during a power cut, scaled the average up to 50 homes, and added 20% for street lights and the shared water pump.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'xyChart':{'plotColorPalette':'#3d7a58','backgroundColor':'#ffffff'}}}}%%
@@ -110,10 +161,48 @@ flowchart LR
     A["Average household<br><b>3,144 Wh/day</b>"] -->|"× 50 homes"| B["<b>157.2 kWh/day</b>"]
     B -->|"+ 20% community loads"| C["Village requirement<br><b>188.64 kWh/day</b>"]
     C -->|"÷ 5.5 sun hours ÷ 0.8 efficiency"| D["Array needed<br><b>≈ 43 kW</b>"]
-    D --> E["Specified<br><b>40 kWp + 90 kWh battery</b>"]
+    D --> E["Specified<br><b>40 kWp (73 × 550 W) + 90 kWh battery</b>"]
     style C fill:#0f2e22,color:#fbfcfa,stroke:#0f2e22
     style E fill:#f6c624,color:#12201a,stroke:#e0a800
 ```
+
+---
+
+<a id="innovation"></a>
+
+## 💡 Innovation
+
+### 1 · Smart agrivoltaics: panels above, crops below
+
+<img src="docs/screenshots/innovation-agri.jpg" alt="The agrivoltaics section: a drawing of panels raised about 3 m over rows of leafy greens and turmeric, with three benefit cards" width="100%">
+
+The 40 kWp array stands on tall mounts **about 3 m off the ground**, and shade-loving crops such as **leafy greens and turmeric** grow right underneath. One field, two harvests: electricity and food.
+
+| | Benefit |
+| --- | --- |
+| 🌱 **Zero land waste** | The same plot grows food and makes electricity. No family has to give up a field for the grid. |
+| 🌡️ **Cooler panels, more power** | Panels lose roughly 0.4% of their output per °C. Plants release moisture, so the air under the array stays cooler than bare ground and the panels produce more on hot days. |
+| 💵 **A second income for farmers** | Farmers who tend the plot keep what it grows. Partial shade suits greens and turmeric, and they need less water out of the midday sun. |
+
+### 2 · AI Weather Forecast Mode: a battery that checks the weather
+
+<img src="docs/screenshots/innovation-ai.jpg" alt="The AI Weather Forecast Mode explainer: three steps and a chart where the battery holds about 45% overnight with AI on, against draining to 20% with AI off" width="100%">
+
+A normal controller only reacts to what's happening now. With AI Weather Forecast Mode switched on, the controller plans a day ahead:
+
+```mermaid
+flowchart LR
+    F["☁️ Read tomorrow's<br>forecast"] --> N["🧮 Add up what every grid cut<br>in the next 24 h will need,<br>minus expected solar"]
+    N --> R["🔋 Set that as the reserve<br>(never below 20%)"]
+    R --> H{"Main grid on?"}
+    H -->|yes| K["Keep the reserve.<br>Grid carries the load.<br>Top up if below."]
+    H -->|"no, cut"| U["Use the battery<br>down to 20%"]
+    R --> C{"Cloudy tomorrow?"}
+    C -->|yes| X["Charge to 100%<br>before selling any power"]
+    style R fill:#f6c624,color:#12201a,stroke:#e0a800
+```
+
+In a run of the simulation with a cloudy day forecast, the battery **stays around 45% overnight** with AI on, but **drains to its 20% floor** with AI off.
 
 ---
 
@@ -121,9 +210,9 @@ flowchart LR
 
 ## 📡 The live dashboard
 
-The core feature: a control room that runs a **simulated day in Rampur Kheda**, minute by minute.
+A control room that runs a **simulated day in Rampur Kheda**, minute by minute, starting at the visitor's own clock time. The home page shows the same live figures.
 
-<img src="docs/screenshots/dashboard.jpg" alt="The live microgrid dashboard: solar generation, battery charge, net-metering earnings and the 50-house meter grid" width="100%">
+<img src="docs/screenshots/dashboard.jpg" alt="The live dashboard with AI Weather Forecast Mode on during a grid cut: solar generation, battery charge with the 24-hour projection, net-metering earnings and the 50-house meter grid" width="100%">
 
 <table>
 <tr>
@@ -132,11 +221,11 @@ The core feature: a control room that runs a **simulated day in Rampur Kheda**, 
 | Panel | What it shows |
 | --- | --- |
 | ☀️ **Solar generation** | Live kW output, energy generated today, and a chart of today's output against village load |
-| 🔋 **Battery storage** | LiFePO4 state of charge, kWh stored, charging or supplying, and hours of backup at the current load |
-| 💹 **Net metering** | Grid-export earnings ticking up through the day, kWh exported, and grid status (connected, exporting, or cut and islanded) |
-| 🏠 **Household grid** | House #01–#50, laid out as the 50 cells of one solar panel, each with live draw and prepaid-meter status. Click a house to read its meter |
+| 🔋 **Battery storage** | Charge level, kWh stored, charging or supplying, hours of backup, tomorrow's forecast, the reserve being held, and a **24-hour projected battery curve** compared against the other mode |
+| 💹 **Net metering** | Earnings from selling power to the grid, kWh exported, and grid status (connected, exporting, or cut and islanded) |
+| 🏠 **Household grid** | House #01–#50, laid out as the 50 cells of one solar panel, each with live draw and prepaid-meter status. Tap a house to read its meter |
 
-**Speed:** `Real time` · `1 min / sec` · `Day in 2 min`
+**Controls:** `Real time` · `1 min / sec` · `Day in 2 min` · **`AI Weather Forecast Mode`** on / off
 
 </td>
 <td width="38%" valign="top">
@@ -168,19 +257,22 @@ stateDiagram-v2
     Charging --> Discharging: after sunset
     Discharging --> Islanded: grid cut at 9 pm
     Islanded --> Discharging: grid back at 11 pm
-    Discharging --> Reserve: battery at 20%
+    Discharging --> Reserve: battery at reserve
     Reserve --> Charging: sunrise
 ```
 
+- **Clock:** the simulated day starts at the visitor's local time, so the home page and dashboard agree. Speed it up to watch a whole day.
 - **Solar:** a sun curve from about 06:15 to 18:45 at 82% system efficiency, with drifting clouds.
+- **Weather:** a repeating six-day monsoon pattern, from sunny to heavily overcast, which sets each day's sunshine and the next day's forecast.
 - **Loads:** the five surveyed household types, using their real appliance wattages and hours, spread across 50 homes, plus street lights and the shared water pump.
 - **Battery:** 90 kWh, 92% round-trip efficiency, 20% reserve floor, 45 kW maximum charge rate.
 - **Grid cuts:** 14:00–18:00 and 21:00–23:00. During a cut the microgrid islands and the battery carries every home.
-- **Net metering:** surplus above 90% charge is exported at ₹3.10/kWh.
+- **Net metering:** surplus above 90% charge is exported at ₹3.10/kWh. With AI on and a cloudy day ahead, the battery fills to 100% first.
+- **AI Weather Forecast Mode:** holds a reserve sized to the next 24 hours of cuts and tops up from the grid at up to 6 kW when it falls below.
 - **Prepaid meters:** balances fall at ₹5.00/kWh. Two homes start low so the recharge warning shows.
 
 > [!NOTE]
-> All dashboard data is **simulated** for demonstration. The tariffs and cut schedule are modelling assumptions, not measured figures.
+> All dashboard data is **simulated** for demonstration. The tariffs, weather and cut schedule are modelling assumptions, not measured figures.
 
 ---
 
@@ -188,7 +280,7 @@ stateDiagram-v2
 
 ## ⚙️ How the microgrid works
 
-Power flows one way: from the array, through the central power house, out to every meter.
+Power flows one way: from the panels, through the central power house, out to every meter.
 
 ```mermaid
 flowchart LR
@@ -197,7 +289,7 @@ flowchart LR
     end
     subgraph S["🔋 STORE · Central power house"]
         I["Inverters"]
-        M["MGCC<br>Microgrid Central Controller"]
+        M["MGCC<br>Microgrid Central Controller<br>+ AI forecast mode"]
         B["90 kWh LiFePO4 BESS<br>BMS · 6,000+ cycles"]
     end
     subgraph D["🏠 DISTRIBUTE"]
@@ -216,16 +308,18 @@ flowchart LR
     style D fill:#eef2ef,stroke:#56636a
 ```
 
+<img src="docs/screenshots/system.jpg" alt="The How it works page with the Generate stage open" width="100%">
+
 <table>
 <tr>
 <td width="33%" valign="top">
 <img src="assets/rooftop-solar-power-plant.jpg" alt="Rows of monocrystalline solar panels" width="100%">
 
 **Generate**<br>
-73 × 550 W monocrystalline modules on elevated 3 m mounts with crops underneath, in series-parallel strings. About 176 kWh on a clear day.
+73 × 550 W monocrystalline panels on steel mounts about 3 m high, with crops growing underneath. Series-parallel strings tilted 15° south. About 176 kWh on a clear day.
 </td>
 <td width="33%" valign="top">
-<img src="docs/screenshots/system-store.jpg" alt="The Store stage on the website, showing the battery racks" width="100%">
+<img src="docs/screenshots/system-store.jpg" alt="The Store stage on the How it works page, showing the battery racks" width="100%">
 
 **Store**<br>
 90 kWh LiFePO4 bank with an integrated BMS. Round trip above 92%, switch-over under 20 ms, run by the MGCC.
@@ -252,7 +346,7 @@ Armoured cables to every lane. Each home gets a smart prepaid meter, MCB and ELC
 
 ## 💰 Financial transparency
 
-<img src="docs/screenshots/finances.jpg" alt="The market bill and who-pays breakdown on the website" width="100%">
+<img src="docs/screenshots/finances.jpg" alt="The market bill and who-pays breakdown on the finances page" width="100%">
 
 <table>
 <tr>
@@ -301,7 +395,17 @@ pie showData
 | − CSR & state grants | | ₹13,84,000 |
 | **= Community share** | **50 homes × ₹1,200** | **₹60,000** |
 
-The payback is projected at **under 3 years**, from grid-export earnings and the diesel families no longer buy. After that, export income funds the maintenance account.
+The grid is expected to pay for itself in **under 3 years**, through money earned selling power back to the grid and the diesel families no longer buy. After that, export income goes into the maintenance fund.
+
+### Room to grow
+
+<img src="docs/screenshots/roadmap.jpg" alt="The three-phase roadmap from 50 homes to all 480 households" width="100%">
+
+| Phase | Homes | Solar | Battery / cost | Notes |
+| --- | ---: | ---: | --- | --- |
+| **1 · this project** | 50 | 40 kWp | 90 kWh · ₹36.1 lakh | Prove it works, build trust, start the maintenance fund |
+| **2 · after a year running** | 200 | ~160 kWp | ~360 kWh | Indicative, scaled from phase one (~0.8 kWp and ~1.8 kWh per home) |
+| **3 · the whole village** | 480 | 377 kWp | ~₹1.95 crore | From the whole-village design in the team's worksheet |
 
 ---
 
@@ -328,23 +432,36 @@ flowchart TB
 <br>
 
 **What happens during the monsoon or on cloudy days?**<br>
-The battery keeps a reserve that bridges low-generation days, and monocrystalline panels still harvest diffuse light under cloud.
+The battery always keeps some charge in reserve for dull days, and monocrystalline panels still catch plenty of light through cloud. During long grey spells the battery tops up from the main grid whenever it's available. With AI Weather Forecast Mode on, the controller sees the clouds coming and saves extra charge a day ahead.
 
-**What if households delay or fail to pay?**<br>
-Smart prepaid meters pause supply when credit runs out, so no debt builds up. The committee handles hardship cases through peer accountability.
+**What if a family can't pay on time?**<br>
+Smart prepaid meters simply pause supply when the credit runs out, so nobody piles up debt. If a family is going through a hard time, the committee sorts it out openly, neighbour to neighbour.
 
-**Who handles breakdowns and daily maintenance?**<br>
-A trained local lead technician runs weekly checks, backed by a professional annual maintenance contract for major components.
+**Who fixes breakdowns?**<br>
+A local technician trained by the team checks everything once a week. The big equipment is covered by a yearly maintenance contract with a professional service company. Support is also available at [67811urasicousct@gmail.com](mailto:67811urasicousct@gmail.com).
 
 </details>
 
 ---
 
-## 🧪 Prototype & innovation
+## 🧪 Prototype & report
 
-<img src="docs/screenshots/prototype.jpg" alt="The prototype gallery on the website, with the sketch plan selected" width="100%">
+<img src="docs/screenshots/prototype.jpg" alt="The prototype page, with the sketch plan selected" width="100%">
 
-The gallery holds the team's **sketch plan**, the **cardboard prototype**, the prototype's **material cost bill**, and a download of the full **project report**.
+The prototype page holds the team's **sketch plan**, the **cardboard prototype**, its **material bill**, and a download of the full **project report**.
+
+| Prototype material | Cost |
+| --- | ---: |
+| Cardboard sheets (3, reused) | ₹0 |
+| Mini solar panel, 6 V 1 W (1) | ₹100 |
+| 3.7 V Li-ion cell with holder | ₹150 |
+| 5 mm LEDs (20) and resistors | ₹60 |
+| Mini DC motor fan | ₹80 |
+| Toggle switches (2) | ₹30 |
+| Hook-up wire and tape | ₹40 |
+| Glue (from home) | ₹0 |
+| Markers | ₹30 |
+| **Total** | **₹490** |
 
 ---
 
@@ -355,37 +472,26 @@ The gallery holds the team's **sketch plan**, the **cardboard prototype**, the p
 <td width="68%" valign="top">
 
 ### Design idea
-The whole page runs on one shape: the **clipped-corner square of a monocrystalline solar cell**. It forms the buttons, tabs, image masks and tiles. In the dashboard, the 50 households become the 50 cells of a single solar panel.
+The whole site runs on one shape: the **clipped-corner square of a monocrystalline solar cell**. It forms the buttons, tabs, image masks, tiles and tour dots. In the dashboard, the 50 households become the 50 cells of a single solar panel.
 
 | Colour | Hex | Use |
 | --- | --- | --- |
-| ![](https://img.shields.io/badge/-%20%20%20%20-0b2219?style=flat-square) Deep forest | `#0b2219` | Hero, dashboard, footer |
+| ![](https://img.shields.io/badge/-%20%20%20%20-0b2219?style=flat-square) Deep forest | `#0b2219` | Menu bar, page headers, dashboard, footer |
 | ![](https://img.shields.io/badge/-%20%20%20%20-1f5039?style=flat-square) Forest | `#1f5039` | Fields and panels |
 | ![](https://img.shields.io/badge/-%20%20%20%20-9dc3ad?style=flat-square) Sage | `#9dc3ad` | Secondary fields |
 | ![](https://img.shields.io/badge/-%20%20%20%20-fbfcfa?style=flat-square) Crisp white | `#fbfcfa` | Page ground |
 | ![](https://img.shields.io/badge/-%20%20%20%20-56636a?style=flat-square) Slate | `#56636a` | Secondary text |
-| ![](https://img.shields.io/badge/-%20%20%20%20-f6c624?style=flat-square) Solar yellow | `#f6c624` | Actions and live energy |
+| ![](https://img.shields.io/badge/-%20%20%20%20-f6c624?style=flat-square) Solar yellow | `#f6c624` | Actions, live energy, current step |
 
 **Type:** [Jost](https://fonts.google.com/specimen/Jost), a 1920s geometric sans.
 
 </td>
 <td width="32%" valign="top">
-<img src="docs/screenshots/mobile-hero.jpg" alt="The website hero on a phone" width="100%">
+<img src="docs/screenshots/mobile-hero.jpg" alt="The home page on a phone" width="100%">
 <div align="center"><sub>Fully responsive</sub></div>
 </td>
 </tr>
 </table>
-
-### Page sections
-
-1. **Hero:** name, tagline, section folders, and live figures with *Explore live dashboard* and *View project proposal*
-2. **The Rampur Kheda Initiative:** village profile, key figures, and the load survey
-3. **Live microgrid dashboard:** the simulated control room
-4. **Generate, store, distribute:** the three-stage architecture
-5. **Financial transparency:** the market bill and who pays
-6. **Run by the village:** governance and the pitch Q&A
-7. **Prototype & innovation:** sketch, model, bill and report download
-8. **Footer:** © 2026 Urasicous Clean Tech | Developed with passion by Team Pioneering Sol-Gen for HCL Jigsaw.
 
 ---
 
@@ -400,7 +506,7 @@ git clone https://github.com/Roushan-2104/Urasicous-Clean-Tech.git
 cd Urasicous-Clean-Tech
 ```
 
-Open `index.html` in any browser and use the menu or the Next buttons, or serve the folder:
+Open `index.html` in any browser and use the menu or the *Next* buttons, or serve the folder:
 
 ```bash
 python -m http.server 8000
@@ -426,7 +532,7 @@ Urasicous-Clean-Tech/
 ├── governance.html     # 7 · Village Electricity Committee, Q&A
 ├── prototype.html      # 8 · Desk prototype, bill, project report
 ├── styles.css          # design tokens, layout, responsive rules
-├── sim.js              # microgrid simulation (home + dashboard)
+├── sim.js              # microgrid simulation and AI forecast mode (home + dashboard)
 ├── common.js           # menu, glossary tooltips, accordion, prototype tabs
 ├── assets/
 │   ├── Village-Microgrid-Project-Report.pptx   # the team's worksheet
@@ -436,14 +542,28 @@ Urasicous-Clean-Tech/
 └── docs/screenshots/   # images used in this README
 ```
 
+> [!TIP]
+> Each page repeats the same menu bar, tour bar and footer. If you add or rename a page, update those three blocks on every page so the tour stays in step.
+
 ---
 
 ## 📝 Notes on the figures
 
 - The headline figures (50 homes, 40 kWp, 90 kWh, ₹36.1 lakh, ₹1,200, under 3 years) follow the project brief. The village profile, load survey, battery specifications, governance model and pitch answers come from the team's worksheet.
-- The worksheet also has a larger whole-village design (480 homes, 377 kWp, about ₹1.95 crore). The website presents the **50-household first phase**.
+- The array is **73 × 550 W = 40.15 kWp**, which keeps the specified 40 kWp with 550 W modules.
+- The yearly impact figures are estimates, with the working shown above. The diesel figure is an upper limit.
+- The worksheet's whole-village design (480 homes, 377 kWp, about ₹1.95 crore) is used as phase 3 of the roadmap. Phase 2 is an indicative estimate scaled from phase one.
 - The itemised bill splits ₹36.1 lakh across components at estimated market rates. The 60% subsidy is applied to the gross cost.
 - The cardboard prototype appears as a drawing, and its material bill (₹490) is a sample. Both are to be replaced with the team's real photo and bill.
+- The project report (`.pptx`) still shows the earlier 80 × 500 W panels and prototype bill.
+
+---
+
+<a id="contact"></a>
+
+## ✉️ Contact & support
+
+**Email:** [67811urasicousct@gmail.com](mailto:67811urasicousct@gmail.com)
 
 ---
 

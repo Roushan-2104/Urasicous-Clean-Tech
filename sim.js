@@ -105,7 +105,8 @@
       batt = -draw; net += draw;
       if (net < 0 && up) grid = -net; // import the shortfall
     }
-    if (up && p.topUp && batt <= 0 && stored < p.floor * BATT_KWH) {
+    // top up only once the battery is clearly below the reserve, so it doesn't flicker between charging and supplying
+    if (up && p.topUp && batt <= 0 && stored < (p.floor - 0.02) * BATT_KWH) {
       const top = Math.min(TOPUP_KW, (p.floor * BATT_KWH - stored) * 60 / RT_EFF);
       batt += top; grid += top;
     }
