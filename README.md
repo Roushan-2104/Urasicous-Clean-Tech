@@ -38,7 +38,7 @@ An eight-page website, with a guided tour for judges and a live, simulated contr
 for HCL Jigsaw · Edition 7 · Grade 9<br>
 Climate Action & Sustainable Energy
 
-All of the work is theirs: the village research, load calculations, system sizing, cost analysis, distribution sketch, governance model and pitch. It is in their worksheet: [`Village-Microgrid-Project-Report.pptx`](assets/Village-Microgrid-Project-Report.pptx).
+All of the work is theirs: the village research, load calculations, system sizing, cost analysis, distribution sketch, governance model and pitch. It is in their worksheet: [`Village-Microgrid-Project-Report.pptx`](assets/team/Village-Microgrid-Project-Report.pptx).
 
 </td>
 <td width="50%" valign="top">
@@ -106,7 +106,7 @@ The team designed a **community-owned solar microgrid**. Its first phase covers 
 
 </td>
 <td width="45%" valign="top">
-<img src="assets/anjenari-village-nashik.jpg" alt="Village houses on green hills near Nashik in the monsoon" width="100%">
+<img src="assets/photos/anjenari-village-nashik.jpg" alt="Village houses on green hills near Nashik in the monsoon" width="100%">
 <sub>A village in Nashik district, the region Rampur Kheda is set in.</sub>
 </td>
 </tr>
@@ -313,7 +313,7 @@ flowchart LR
 <table>
 <tr>
 <td width="33%" valign="top">
-<img src="assets/rooftop-solar-power-plant.jpg" alt="Rows of monocrystalline solar panels" width="100%">
+<img src="assets/photos/rooftop-solar-power-plant.jpg" alt="Rows of monocrystalline solar panels" width="100%">
 
 **Generate**<br>
 73 × 550 W monocrystalline panels on steel mounts about 3 m high, with crops growing underneath. Series-parallel strings tilted 15° south. About 176 kWh on a clear day.
@@ -325,7 +325,7 @@ flowchart LR
 90 kWh LiFePO4 bank with an integrated BMS. Round trip above 92%, switch-over under 20 ms, run by the MGCC.
 </td>
 <td width="33%" valign="top">
-<img src="assets/logarex-smart-household-electricity-meter-build-year.jpg" alt="A smart household electricity meter" width="100%">
+<img src="assets/photos/logarex-smart-household-electricity-meter-build-year.jpg" alt="A smart household electricity meter" width="100%">
 
 **Distribute**<br>
 Armoured cables to every lane. Each home gets a smart prepaid meter, MCB and ELCB, with lightning arresters and earthing throughout.
@@ -336,7 +336,7 @@ Armoured cables to every lane. Each home gets a smart prepaid meter, MCB and ELC
 ### The team's layout sketch
 
 <div align="center">
-<img src="assets/sketch-plan.jpg" alt="Hand-drawn sketch plan: solar array zone, central power house with controller, inverters and battery, and cable lines to households" width="80%">
+<img src="assets/team/sketch-plan.jpg" alt="Hand-drawn sketch plan: solar array zone, central power house with controller, inverters and battery, and cable lines to households" width="80%">
 <br><sub>Hand-drawn by Team Pioneering Sol-Gen: generation zone, central power house, and the AC backbone on poles and underground to every home.</sub>
 </div>
 
@@ -523,23 +523,27 @@ python -m http.server 8000
 
 ```
 Urasicous-Clean-Tech/
-├── index.html          # 1 · Home: summary, impact, SDGs, judge's tour
-├── village.html        # 2 · The village & the need, load survey, sizing
-├── system.html         # 3 · How it works: generate, store, distribute
-├── innovation.html     # 4 · Agrivoltaics + AI Weather Forecast Mode
-├── dashboard.html      # 5 · Live microgrid dashboard (simulation)
-├── finances.html       # 6 · Costs, who pays, scaling roadmap
-├── governance.html     # 7 · Village Electricity Committee, Q&A
-├── prototype.html      # 8 · Desk prototype, bill, project report
-├── styles.css          # design tokens, layout, responsive rules
-├── sim.js              # microgrid simulation and AI forecast mode (home + dashboard)
-├── common.js           # menu, glossary tooltips, accordion, prototype tabs
+├── index.html            # 1 · Home: summary, impact, SDGs, judge's tour
+├── village.html          # 2 · The village & the need, load survey, sizing
+├── system.html           # 3 · How it works: generate, store, distribute
+├── innovation.html       # 4 · Agrivoltaics + AI Weather Forecast Mode
+├── dashboard.html        # 5 · Live microgrid dashboard (simulation)
+├── finances.html         # 6 · Costs, who pays, scaling roadmap
+├── governance.html       # 7 · Village Electricity Committee, Q&A
+├── prototype.html        # 8 · Desk prototype, bill, project report
+├── css/
+│   └── styles.css        # design tokens, layout, responsive rules
+├── js/
+│   ├── sim.js            # microgrid simulation and AI forecast mode (home + dashboard)
+│   └── common.js         # menu, glossary tooltips, accordion, prototype tabs
 ├── assets/
-│   ├── Village-Microgrid-Project-Report.pptx   # the team's worksheet
-│   ├── sketch-plan.jpg                          # the team's layout sketch
-│   ├── credits.json                             # source + licence of every photo
-│   └── *.jpg                                    # openly licensed photographs
-└── docs/screenshots/   # images used in this README
+│   ├── team/             # the team's own work
+│   │   ├── Village-Microgrid-Project-Report.pptx
+│   │   └── sketch-plan.jpg
+│   └── photos/           # openly licensed photographs
+│       ├── credits.json  # source + licence of every photo
+│       └── *.jpg
+└── docs/screenshots/     # images used in this README
 ```
 
 > [!TIP]
